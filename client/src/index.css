@@ -90,6 +90,7 @@ section {
   padding-top: 55px;
   font-size: 13px;
   display: flex;
+  width: 100%;
 }
 
 .post .author-name {
@@ -186,7 +187,7 @@ section {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .container {
     width: 960px;
   }
@@ -194,15 +195,21 @@ section {
   section {
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
 
   .post-container {
-    max-width: 48%;
+    max-width: 49%;
     height: 300px;
   }
 
   .post-container img {
     height: 300px;
+    width: 180px;
+  }
+
+  .post {
+    padding: 20px;
   }
 }
 
@@ -214,6 +221,7 @@ section {
   section {
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
 
   .post-container {
