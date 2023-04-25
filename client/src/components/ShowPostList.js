@@ -17,22 +17,35 @@ const ShowPostList = () => {
 
   return (
     <>
-      <header>
-        <h1>My Blog</h1>
-      </header>
-      <main>
-        {posts.map((post) => (
-          <div className="post-container">
-            <div>
+      <div className="container">
+        <h1>Featured Posts</h1>
+        <section>
+          {posts.map((post) => (
+            <div className="post-container">
               <img src="https://images.unsplash.com/photo-1555181937-efe4e074a301?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=300"></img>
+              <div className="post" key={post._id}>
+                <h2> {post.title} </h2>
+                <div className="content">{HTMLReactParser(post.content)}</div>
+                <div className="metafooter">
+                  <img className="avatar"></img>
+                  <span className="author-meta">
+                    <span className="author-name">
+                      {post.author} Gorkem Unal
+                    </span>
+                    <br />
+                    <span className="post-date">
+                      {" "}
+                      {post.date} Apr 25, 2023{" "}
+                    </span>
+                    <span className="dot"></span>
+                    <span className="readingtime">4 min read</span>
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="post" key={post._id}>
-              <h2> {post.title} </h2>
-              <p>{HTMLReactParser(post.content)}</p>
-            </div>
-          </div>
-        ))}
-      </main>
+          ))}
+        </section>
+      </div>
     </>
   );
 };
