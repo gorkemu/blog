@@ -64,17 +64,18 @@ function CreatePost() {
                 "help",
                 "wordcount",
                 "codesample",
+                "blockquote",
               ],
               toolbar:
                 "undo redo | blocks " +
-                "bold italic forecolor codesample image link | bullist numlist outdent indent | " +
+                "bold italic blockquote forecolor codesample image link | bullist numlist outdent indent | " +
                 "removeformat | code | help",
               content_style:
                 "body { font-family:Helvetica,Arial,sans-serif; font-size:18px }",
             }}
           />
           <br />
-          <button>Create</button>
+          <button>Create Post</button>
         </form>
       </section>
     </div>
