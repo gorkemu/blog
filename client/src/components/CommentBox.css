@@ -1,0 +1,52 @@
+.form-group input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    color: #000000b3
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    color: #000000b3;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #764abc;
+}
+
+.commentbox button {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #764abc;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: inherit;
+}
+
+.commentbox button:hover {
+    background-color: #5a3799;
+}
+
+
