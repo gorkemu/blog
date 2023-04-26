@@ -42,20 +42,22 @@
 }
 
 .createpost button {
-    background-color: #74488e;
-    color: white;
-    padding: 10px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    display: block;
+    margin: 0 auto; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #764abc;
+    color: #fff;
     cursor: pointer;
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .createpost button:hover {
-    opacity: 0.92;
+    background-color: #5a3799;
 }
 
