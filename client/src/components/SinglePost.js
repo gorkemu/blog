@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import HTMLReactParser from "html-react-parser";
 import { useParams } from "react-router-dom";
 import "./SinglePost.css";
+import CommentBox from "./CommentBox";
 
 const SinglePost = () => {
   const [post, setPost] = useState({});
@@ -40,6 +41,7 @@ const SinglePost = () => {
           </div>
         </div>
       </section>
+      <CommentBox />
     </div>
   );
 };
