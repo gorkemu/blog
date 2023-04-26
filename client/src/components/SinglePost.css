@@ -45,12 +45,22 @@
 }
 
 .singlepost .post .content {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.8;
     color: #222222;
     text-align: justify;
     text-justify: inter-word;
     word-break: keep-all;
+}
+
+.singlepost .post a {
+    text-decoration: none;
+    color: #764abc;
+    transition:  all 0.3s ease-in-out;
+}
+
+.singlepost .post a:hover {
+    text-decoration: underline;
 }
 
 .singlepost .metafooter {
@@ -86,16 +96,13 @@
     margin-right: 7px;
 }
 
-@media (max-width: 400px) {
-.singlepost .post .content {
-        font-size: 15px;
-    }
-}
-
 @media (min-width: 767px) {
     .singlepost {
         width: 720px; 
     }
+        .singlepost .post .content {
+            font-size: 18px;
+        }
 }
 
 
