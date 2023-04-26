@@ -1,238 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-}
-
-.container {
-  padding: 0 15px;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.container h1 {
-  font-size: 22.5px;
-  color: #222222;
-  margin: 40px 0 25px 0;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, .44);
-  max-width: 100%;
-}
-
-section {
-  display: flex;
-  width: 100%;
-  max-width: 100%;
-  padding: 0 15px;
-}
-
-.post-container {
-  display: flex;
-  width: 100%;
-  margin-bottom: 30px;
-  border: 1px solid rgba(0, 0, 0, .1);
-  border-radius: 2px;
-}
-
-.post-container img {
-  object-fit: cover;
-  height: 250px;
-  width: 100%;
-  max-width: 100%;
-}
-
-.post {
-  padding: 20px 35px 20px 35px;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.post h2 {
-  font-size: 21px;
-  color: #222222;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.post .date {
-  font-size: 12px;
-  color: #999;
-  margin-top: 5px;
-}
-
-.post .content {
   font-size: 15px;
+  font-weight: 400;
   line-height: 1.5;
-  color: #5f636d;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
 }
 
-.post .metafooter {
-  margin-top: auto;
-  padding-top: 55px;
-  font-size: 13px;
-  display: flex;
-  width: 100%;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+
+pre {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 2px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  max-height: 500px;
 }
-
-.post .author-name {
-  color:#000000cc;
-}
-
-.post .avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 13px;
-  cursor: pointer;
-}
-
-.post .post-date, .post .dot, .post .readingtime {
-  color: #0000008a;
-}
-
-.post .dot:after {
-  content: "\00B7";
-  margin-left: 3px;
-  margin-right: 3px;
-}
-
-@media (max-width: 400px) {
-  .container {
-    width: 100%;
-  }
-
-  section {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .post-container {
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .post {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 576px) {
-  .container {
-    width: 100%;
-  }
-
-  section {
-    flex-direction: column;
-  }
-
-  .post-container {
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .container {
-    width: 540px;
-  }
-
-  section {
-    flex-direction: column;
-  }
-
- .post-container {
-   flex-direction: column;
-   width: 100%;
-   max-width: 100%;
- }
-}
-
-@media (min-width: 767px) and (max-width: 992px) {
-  .container {
-    width: 720px;
-  }
-
-  section {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .post-container {
-    flex-direction: column;
-    max-width: 48%;
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .container {
-    width: 960px;
-  }
-
-  section {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .post-container {
-    max-width: 49%;
-    height: 300px;
-  }
-
-  .post-container img {
-    height: 300px;
-    width: 180px;
-  }
-
-  .post {
-    padding: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
-
-  section {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  .post-container {
-    max-width: 48%;
-    height: 300px;
-  }
-
-  .post-container img {
-    height: 300px;
-  }
-}
-
-
-
