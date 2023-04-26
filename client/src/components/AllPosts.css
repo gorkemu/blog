@@ -1,0 +1,221 @@
+.allposts {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.allposts h1 {
+    font-size: 22.5px;
+    color: #222222;
+    margin: 40px 0 25px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .44);
+    max-width: 100%;
+}
+
+.allposts section {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.allposts .post-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px;
+}
+
+.allposts .post-container img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.allposts .post {
+    padding: 20px 35px 20px 35px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.allposts .post h2 {
+    font-size: 21px;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.allposts .post .date {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.allposts .post .content {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #5f636d;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.allposts .post .metafooter {
+    margin-top: auto;
+    padding-top: 55px;
+    font-size: 13px;
+    display: flex;
+    width: 100%;
+}
+
+.allposts .post .author-name {
+    color: #000000cc;
+}
+
+.allposts .post .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.allposts .post .post-date,
+.allposts .post .dot,
+.allposts .post .readingtime {
+    color: #0000008a;
+}
+
+.allposts .post .dot:after {
+    content: "\2010";
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+@media (max-width: 400px) {
+    .allposts {
+        width: 100%;
+    }
+
+    .allposts section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .allposts .post-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .allposts .post {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+    .allposts {
+        width: 100%;
+    }
+
+    .allposts section {
+        flex-direction: column;
+    }
+
+    .allposts .post-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .allposts {
+        width: 540px;
+    }
+
+    .allposts section {
+        flex-direction: column;
+    }
+
+    .allposts .post-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .allposts {
+        width: 720px;
+    }
+
+    .allposts section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .allposts .post-container {
+        flex-direction: column;
+        max-width: 48%;
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .allposts {
+        width: 960px;
+    }
+
+    .allposts section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .allposts .post-container {
+        max-width: 49%;
+        height: 300px;
+    }
+
+    .allposts .post-container img {
+        height: 300px;
+        width: 180px;
+    }
+
+    .allposts .post {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .allposts {
+        width: 1140px;
+    }
+
+    .allposts section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .allposts .post-container {
+        max-width: 48%;
+        height: 300px;
+    }
+
+    .allposts .post-container img {
+        height: 300px;
+    }
+}
