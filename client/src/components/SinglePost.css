@@ -96,6 +96,33 @@
     margin-right: 7px;
 }
 
+.comment {
+    padding: 15px 0;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.comment-author {
+    font-size: 13px;
+    font-family: inherit;
+    color: #000000cc;
+}
+
+.comment-date {
+    font-size: 13px;
+    color: #0000008a;
+    margin-top: 5px;
+}
+
+.comment-content {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: justify;
+    word-break: keep-all;
+    padding: 10px 0;
+}
+
 @media (min-width: 767px) {
     .singlepost {
         width: 720px; 
