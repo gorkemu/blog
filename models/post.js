@@ -7,20 +7,29 @@ const PostSchema = new Schema({
     type: String,
     required: true,
   },
+
   content: {
     type: String,
     required: true,
   },
+
   date: {
     type: Date,
-    default: Date.now,
     required: true,
   },
-  //   published: {
-  //     type: Boolean,
-  //     default: false,
-  //     required: true,
-  //   },
+
+  published: {
+    type: Boolean,
+    default: false,
+    required: true,
+  },
+
+  comments: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Comment",
+    },
+  ],
 });
 
 // Virtual for formatted date
